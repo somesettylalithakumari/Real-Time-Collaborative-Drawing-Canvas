@@ -42,22 +42,23 @@ Built entirely from scratch using **Vanilla JavaScript**, **HTML5 Canvas**, and 
 
 ## 📁 Project Structure
 
+```bash
 collaborative-canvas/
 ├── client/
-│ ├── index.html # UI layout + canvas element
-│ ├── style.css # Styling and layout
-│ ├── main.js # Entry point for initialization
-│ ├── canvas.js # Drawing logic (brush, eraser, undo/redo)
-│ ├── websocket.js # WebSocket (Socket.IO) client handling
-│ └── utils.js # Helper utilities
+│   ├── index.html          # UI layout + canvas element
+│   ├── style.css           # Styling and layout
+│   ├── main.js             # Entry point for initialization
+│   ├── canvas.js           # Drawing logic (brush, eraser, undo/redo)
+│   ├── websocket.js        # WebSocket (Socket.IO) client handling
+│   └── utils.js            # Helper utilities
 ├── server/
-│ ├── server.js # Express + Socket.IO server
-│ ├── rooms.js # Room management
-│ └── drawing-state.js # Global canvas state tracking
+│   ├── server.js           # Express + Socket.IO server
+│   ├── rooms.js            # Room management
+│   └── drawing-state.js    # Global canvas state tracking
 ├── package.json
 ├── README.md
 └── ARCHITECTURE.md
-
+```
 ---
 
 ## 🧪 How to Test with Multiple Users
