@@ -76,17 +76,14 @@ npm start
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone Repository
-```bash
 git clone https://github.com/your-username/collaborative-canvas.git
 cd collaborative-canvas
 
 ### 2️⃣ Install Dependencies
-```bash
 npm install
 
 
 ### 3️⃣ Start Server
-```bash
 npm start
 ```
 
@@ -112,10 +109,10 @@ npm start
 
 | Evaluation Area | Implementation Highlights |
 |------------------|-----------------------------|
-| **Technical Implementation ** | Efficient canvas operations, modular JavaScript structure |
-| **Real-time Features ** | Smooth WebSocket updates, minimal latency, real-time cursor tracking |
-| **Advanced Features ** | Undo/Redo, global state management, multi-user consistency |
-| **Code Quality (** | Clean separation of logic, documented methods, scalable folder structure |
+| Technical Implementation  | Efficient canvas operations, modular JavaScript structure |
+| Real-time Features  | Smooth WebSocket updates, minimal latency, real-time cursor tracking |
+| Advanced Features  | Undo/Redo, global state management, multi-user consistency |
+| Code Quality  | Clean separation of logic, documented methods, scalable folder structure |
 
 ---
 
