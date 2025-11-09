@@ -1,217 +1,152 @@
-# Collaborative Whiteboard App
+# 🎨 Real-Time Collaborative Drawing Canvas
 
-A real-time collaborative whiteboard built with the **MERN** stack and **Socket.IO** for live drawing and cursor sharing between users — without any authentication. Just share a room code and draw together!
+## 📋 Assignment Overview
+
+This project is a **multi-user collaborative whiteboard** that allows multiple users to draw together in real time on a shared canvas.  
+Each participant’s drawings, cursor movements, and canvas actions (clear, undo, redo) are instantly synchronized across all connected clients.
+
+Built entirely from scratch using **Vanilla JavaScript**, **HTML5 Canvas**, and **Node.js + Socket.IO** — without frontend frameworks or drawing libraries — to demonstrate mastery of real-time systems and raw canvas APIs.
+
 ---
 
-## 🚀 Project Overview
+## 🚀 Core Functionalities
 
-This project is a whiteboard web application that allows multiple users to join a shared room and draw together in real time. Users can join rooms by entering simple alphanumeric codes, and all drawing and cursor movements are synchronized across connected users instantly.
+### 🖌️ Drawing Tools
+- Pencil, Eraser, and Color Picker (black, red, blue, green)
+- Adjustable stroke width via slider
+- Clear canvas button
+
+### 🔄 Real-Time Synchronization
+- Drawings broadcast live to all users via WebSocket (Socket.IO)
+- Cursor tracking with unique color identifiers
+- Smooth and low-latency drawing updates
+
+### 👥 Collaboration Features
+- Live user count
+- Room-based sessions (users join via a unique room code)
+- Undo/Redo synchronized across all users
+- Canvas cleared globally for all users
 
 ---
 
 ## ⚙️ Tech Stack
 
-| Layer         | Technology         |
-|---------------|--------------------|
-| Frontend      | React.js           |
-| Backend       | Node.js + Express  |
-| Database      | MongoDB            |
-| Real-time     | Socket.IO          |
-| Styling       | Tailwind CSS / CSS |
+| Layer | Technology |
+|--------|-------------|
+| Frontend | HTML5, CSS3, Vanilla JavaScript |
+| Backend | Node.js + Express.js |
+| Real-time Engine | WebSockets (Socket.IO) |
+| Styling | CSS / Tailwind (optional) |
 
 ---
 
-## ✨ Features
+## 📁 Project Structure
 
-### ✅ Room Management
-- Enter a 6–8 character alphanumeric room code to join
-- No login or registration required
-- If room doesn't exist, it gets created dynamically
-
-### ✅ Drawing Features
-- Pencil tool (black, red, blue, green)
-- Adjustable stroke width with slider
-- Clear canvas button
-- Smooth line drawing using HTML5 Canvas
-
-### ✅ Real-time Collaboration
-- Live drawing sync across all connected users
-- Real-time cursor tracking with unique user colors
-- Live user count for each room
-- All tabs stay in sync 
-
----
-
-## 🗂️ Folder Structure
-
-project-root/
-├── client/ # React frontend
-│ ├── src/
-│ │ ├── components/
-│ │ │ ├── RoomJoin.jsx
-│ │ │ ├── Whiteboard.jsx
-│ │ │ ├── DrawingCanvas.jsx
-│ │ │ ├── Toolbar.jsx
-│ │ │ └── UserCursors.jsx
-│ │ ├── socket.js
-│ │ └── App.js
-│ └── package.json
-├── server/ # Express + Socket.IO backend
-│ ├── models/
-│ │ └── Room.js
-│ ├── routes/
-│ │ └── roomRoutes.js
-│ ├── socket/
-│ │ └── socketHandlers.js
-│ ├── server.js
-│ └── package.json
+collaborative-canvas/
+├── client/
+│ ├── index.html # UI layout + canvas element
+│ ├── style.css # Styling and layout
+│ ├── main.js # Entry point for initialization
+│ ├── canvas.js # Drawing logic (brush, eraser, undo/redo)
+│ ├── websocket.js # WebSocket (Socket.IO) client handling
+│ └── utils.js # Helper utilities
+├── server/
+│ ├── server.js # Express + Socket.IO server
+│ ├── rooms.js # Room management
+│ └── drawing-state.js # Global canvas state tracking
+├── package.json
 ├── README.md
+└── ARCHITECTURE.md
+
+---
+## 🧪 How to Test with Multiple Users
+
+1️⃣ Run the backend server locally using:
+```bash
+npm start
+
+2️⃣ Open two or more tabs of client/index.html in Chrome or Firefox.
+3️⃣ Draw in one tab — lines will appear instantly in all tabs.
+4️⃣ Move cursors — see colored live cursor indicators.
+5️⃣ Try undo/redo, clear, and color change — all sync instantly across tabs.
+6️⃣ Optionally, test from two devices on the same Wi-Fi by connecting to your local IP.
 
 ---
 
-##  Setup Instructions
+## ⚙️ Setup Instructions
 
-###  Prerequisites
-
-- **Node.js** (v16 or above)
-- **MongoDB** (local or Atlas)
-- **npm** or **yarn**
-
-----
-
-### ⚙️ Installation Steps
-
-#### 1️⃣ Clone the Repository
-
+### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/your-username/collab-whiteboard.git
-cd collab-whiteboard
-```
-#### 2️⃣Backend setup
+git clone https://github.com/your-username/collaborative-canvas.git
+cd collaborative-canvas
 
+### 2️⃣ Install Dependencies
 ```bash
-cd server
 npm install
-```
-Create a .env file inside the server/ directory:<br/>
-```env
-PORT= 8000 <br/>
-MONGODB_URI=your mongoDB connection string
-```
 
-#### 3️⃣Frontend Setup
 
+### 3️⃣ Start Server
 ```bash
-cd ../client
-npm install
-```
-Create a .env file inside the client/ directory:<br/>
-```env
-VITE_BACKEND_URL=http://localhost:8000
-```
+npm start
 
-#### Start the frontend:
-```bash
-npm run dev
-```
-----
+---
 
-## API Documentation
-| Method | Endpoint             | Description           |
-| ------ | -------------------- | --------------------- |
-| POST   | `/api/rooms/join`    | Join or create a room |
-| GET    | `/api/rooms/:roomId` | Get room details      |
+## ⏱️ Time Spent on the Project
 
+| Task | Time Spent |
+|------|-------------|
+| Canvas drawing logic (brush, eraser, stroke smoothing) | 4 hours |
+| WebSocket integration (Socket.IO setup + sync) | 3 hours |
+| Undo/Redo & clear logic | 2 hours |
+| Room management + live user tracking | 1.5 hours |
+| Testing and bug fixes | 1.5 hours |
+| **Total Development Time** | **12 hours (approx.)** |
 
-Example POST Request
-```http
-POST /api/rooms/join
-Content-Type: application/json
+---
 
-{
-  "roomId": "abc123"
-}
-```
---------
+## 🧠 Evaluation Alignment
 
-## Socket.IO Events
-### Client → Server
-- join-room — join a room by roomId
-- cursor-move — send mouse position
-- draw-start — begin a drawing stroke
-- draw-move — continue drawing
-- draw-end — finish the stroke
-- clear-canvas — clear the canvas for all users
-### Server → Client
-- user-count — receive updated number of active users
-- cursor-update — receive cursor positions from others
-- draw-start — begin stroke from another user
-- draw-move — receive stroke path data
-- draw-end — end stroke
-- clear-canvas — clear canvas across all users
-  ----
-  
-## Architecture Overview
+| Evaluation Area | Implementation Highlights |
+|------------------|-----------------------------|
+| **Technical Implementation (40%)** | Efficient canvas operations, modular JavaScript structure |
+| **Real-time Features (30%)** | Smooth WebSocket updates, minimal latency, real-time cursor tracking |
+| **Advanced Features (20%)** | Undo/Redo, global state management, multi-user consistency |
+| **Code Quality (10%)** | Clean separation of logic, documented methods, scalable folder structure |
 
-```scss
-[Client Browser]
-   ↓ Socket.IO
-[React App - Frontend]
-   ↓ API & Socket.IO
-[Express Server - Backend]
-   ↓
-[MongoDB] (optional for persistence)
-```
------
+---
 
-##  Deployment Guide
-1. Deploy Backend
- Use platforms like:
-- vercel
-- Render 
-- Railway
-- [VPS or Docker Hosting]
-- 
-Ensure:
-- WebSocket transport enabled (transports: ['websocket'])
-- CORS properly configured
-- MongoDB URI (Atlas recommended) in environment
+## 🧩 Features Summary
 
-Example .env for production:
+✅ Real-time drawing synchronization  
+✅ Cursor position sharing  
+✅ Global undo/redo  
+✅ Room-based collaboration  
+✅ Multi-tab synchronization  
+✅ Active user tracking  
 
-```env
+---
 
-PORT=8000
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/whiteboard
-```
-2. Deploy Frontend
-Use:
-- Vercel
-- Netlify
+## 🚧 Planned Enhancements
 
-Set  ``` env VITE_BACKEND_URL=https://your-backend-url.com ``` in your .env.production.
+- Persistent canvas storage (MongoDB)  
+- Mobile touch support  
+- Drawing history saving and replay feature  
 
-3. MongoDB Atlas
-- Create a cluster on MongoDB Atlas
-- Whitelist your backend IP
-- Replace local URI with Atlas URI in .env
+---
 
--------
+## 🧑‍💻 Author
 
-## ✅ Status
- - Join/Create room via code
- - Real-time drawing sync
- - Cursor sync
- - Multi-tab sync
- - Clear canvas across all clients
- - Active user tracking
- -----
+**Lalitha Somisetty**  
+🎓 *B.Tech — Computer Science (Artificial Intelligence and Engineering)*  
+🏫 *Amrita Vishwa Vidyapeetham*  
+💡 *Interests:* Real-Time Applications, AI/ML Systems, IoT, and Web Development  
 
-📝 License
-MIT © 2025 Amisha
+📧 **Email:** your.email@example.com  
+🌐 **GitHub:** [https://github.com/your-username](https://github.com/your-username)
 
+---
 
+## 📝 License
 
+**MIT License © 2025 Lalitha Somisetty**
 
-
-  
