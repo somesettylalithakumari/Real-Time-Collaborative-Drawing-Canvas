@@ -100,11 +100,11 @@ npm start
 | Task | Time Spent |
 |------|-------------|
 | Canvas drawing logic (brush, eraser, stroke smoothing) | 1 hours |
-| WebSocket integration (Socket.IO setup + sync) | 3 hours |
-| Undo/Redo & clear logic | 2 hours |
+| WebSocket integration (Socket.IO setup + sync) | 1hours |
+| Undo/Redo & clear logic | 1 hours |
 | Room management + live user tracking | 1.5 hours |
 | Testing and bug fixes | 1.5 hours |
-| **Total Development Time** | **12 hours (approx.)** |
+| **Total Development Time** | **6 hours (approx.)** |
 
 ---
 
@@ -145,7 +145,7 @@ npm start
 💡 *Interests:* Real-Time Applications, AI/ML Systems, IoT, and Web Development  
 
 📧 **Email:** slalithakumari15@gmail.com
-🌐 **GitHub:** [https://github.com/your-username](https://github.com/somesettylalithakumari)
+🌐 **GitHub:** [https://github.com/somesettylalithakumari](https://github.com/somesettylalithakumari)
 
 ---
 
