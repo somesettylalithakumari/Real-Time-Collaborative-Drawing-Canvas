@@ -59,18 +59,18 @@ collaborative-canvas/
 └── ARCHITECTURE.md
 
 ---
+
 ## 🧪 How to Test with Multiple Users
 
 1️⃣ Run the backend server locally using:
 ```bash
 npm start
-
 2️⃣ Open two or more tabs of client/index.html in Chrome or Firefox.
 3️⃣ Draw in one tab — lines will appear instantly in all tabs.
 4️⃣ Move cursors — see colored live cursor indicators.
 5️⃣ Try undo/redo, clear, and color change — all sync instantly across tabs.
 6️⃣ Optionally, test from two devices on the same Wi-Fi by connecting to your local IP.
-
+```
 ---
 
 ## ⚙️ Setup Instructions
@@ -88,8 +88,12 @@ npm install
 ### 3️⃣ Start Server
 ```bash
 npm start
+```
 
 ---
+
+
+
 
 ## ⏱️ Time Spent on the Project
 
@@ -108,10 +112,10 @@ npm start
 
 | Evaluation Area | Implementation Highlights |
 |------------------|-----------------------------|
-| **Technical Implementation (40%)** | Efficient canvas operations, modular JavaScript structure |
-| **Real-time Features (30%)** | Smooth WebSocket updates, minimal latency, real-time cursor tracking |
-| **Advanced Features (20%)** | Undo/Redo, global state management, multi-user consistency |
-| **Code Quality (10%)** | Clean separation of logic, documented methods, scalable folder structure |
+| **Technical Implementation ** | Efficient canvas operations, modular JavaScript structure |
+| **Real-time Features ** | Smooth WebSocket updates, minimal latency, real-time cursor tracking |
+| **Advanced Features ** | Undo/Redo, global state management, multi-user consistency |
+| **Code Quality (** | Clean separation of logic, documented methods, scalable folder structure |
 
 ---
 
@@ -125,15 +129,14 @@ npm start
 ✅ Active user tracking  
 
 ---
-
 ## 🚧 Planned Enhancements
 
 - Persistent canvas storage (MongoDB)  
 - Mobile touch support  
 - Drawing history saving and replay feature  
 
----
 
+---
 ## 🧑‍💻 Author
 
 **Lalitha Somisetty**  
