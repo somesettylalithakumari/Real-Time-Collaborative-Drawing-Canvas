@@ -85,7 +85,6 @@ npm install
 
 ### 3️⃣ Start Server
 npm start
-```
 
 ---
 
