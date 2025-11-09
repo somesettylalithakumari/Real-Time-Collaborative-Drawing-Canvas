@@ -72,7 +72,7 @@ npm start
 4️⃣ Move cursors — see colored live cursor indicators.
 5️⃣ Try undo/redo, clear, and color change — all sync instantly across tabs.
 6️⃣ Optionally, test from two devices on the same Wi-Fi by connecting to your local IP.
-``
+
 ---
 
 ## ⚙️ Setup Instructions
