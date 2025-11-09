@@ -67,7 +67,7 @@ collaborative-canvas/
 ```bash
 npm start
 ```
-2️⃣ Open two or more tabs of client/index.html in Chrome or Firefox.
+2️⃣ Open two or more tabs of client/index.html in Chrome or Firefox.  **line break**.
 3️⃣ Draw in one tab — lines will appear instantly in all tabs.
 4️⃣ Move cursors — see colored live cursor indicators.
 5️⃣ Try undo/redo, clear, and color change — all sync instantly across tabs.
