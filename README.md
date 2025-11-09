@@ -144,8 +144,8 @@ npm start
 🏫 *Amrita Vishwa Vidyapeetham*  
 💡 *Interests:* Real-Time Applications, AI/ML Systems, IoT, and Web Development  
 
-📧 **Email:** your.email@example.com  
-🌐 **GitHub:** [https://github.com/your-username](https://github.com/your-username)
+📧 **Email:** slalithakumari15@gmail.com
+🌐 **GitHub:** [https://github.com/your-username](https://github.com/somesettylalithakumari)
 
 ---
 
