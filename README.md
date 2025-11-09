@@ -67,11 +67,13 @@ collaborative-canvas/
 ```bash
 npm start
 ```
-2️⃣ Open two or more tabs of client/index.html in Chrome or Firefox.  **line break**.
-3️⃣ Draw in one tab — lines will appear instantly in all tabs.
-4️⃣ Move cursors — see colored live cursor indicators.
-5️⃣ Try undo/redo, clear, and color change — all sync instantly across tabs.
-6️⃣ Optionally, test from two devices on the same Wi-Fi by connecting to your local IP.
+
+
+2️⃣ Open two or more tabs of client/index.html in Chrome or Firefox.  . <br>
+3️⃣ Draw in one tab — lines will appear instantly in all tabs.<br>
+4️⃣ Move cursors — see colored live cursor indicators.  <br>
+5️⃣ Try undo/redo, clear, and color change — all sync instantly across tabs.  <br>
+6️⃣ Optionally, test from two devices on the same Wi-Fi by connecting to your local IP.  <br>
 
 ---
 
@@ -97,7 +99,7 @@ npm start
 
 | Task | Time Spent |
 |------|-------------|
-| Canvas drawing logic (brush, eraser, stroke smoothing) | 4 hours |
+| Canvas drawing logic (brush, eraser, stroke smoothing) | 1 hours |
 | WebSocket integration (Socket.IO setup + sync) | 3 hours |
 | Undo/Redo & clear logic | 2 hours |
 | Room management + live user tracking | 1.5 hours |
