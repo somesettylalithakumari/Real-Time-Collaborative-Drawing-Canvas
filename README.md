@@ -45,16 +45,16 @@ Built entirely from scratch using **Vanilla JavaScript**, **HTML5 Canvas**, and 
 ```bash
 collaborative-canvas/
 ├── client/
-│   ├── index.html          # UI layout + canvas element
-│   ├── style.css           # Styling and layout
-│   ├── main.js             # Entry point for initialization
-│   ├── canvas.js           # Drawing logic (brush, eraser, undo/redo)
-│   ├── websocket.js        # WebSocket (Socket.IO) client handling
-│   └── utils.js            # Helper utilities
+│   ├── index.html          
+│   ├── style.css           
+│   ├── main.js             
+│   ├── canvas.js           
+│   ├── websocket.js        
+│   └── utils.js            
 ├── server/
-│   ├── server.js           # Express + Socket.IO server
-│   ├── rooms.js            # Room management
-│   └── drawing-state.js    # Global canvas state tracking
+│   ├── server.js           
+│   ├── rooms.js            
+│   └── drawing-state.js    
 ├── package.json
 ├── README.md
 └── ARCHITECTURE.md
@@ -66,12 +66,13 @@ collaborative-canvas/
 1️⃣ Run the backend server locally using:
 ```bash
 npm start
+```
 2️⃣ Open two or more tabs of client/index.html in Chrome or Firefox.
 3️⃣ Draw in one tab — lines will appear instantly in all tabs.
 4️⃣ Move cursors — see colored live cursor indicators.
 5️⃣ Try undo/redo, clear, and color change — all sync instantly across tabs.
 6️⃣ Optionally, test from two devices on the same Wi-Fi by connecting to your local IP.
-```
+``
 ---
 
 ## ⚙️ Setup Instructions
