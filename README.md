@@ -1,6 +1,6 @@
-# 🎨 Real-Time Collaborative Drawing Canvas
+#  Real-Time Collaborative Drawing Canvas
 
-## 📋 Assignment Overview
+## Assignment Overview
 
 This project is a **multi-user collaborative whiteboard** that allows multiple users to draw together in real time on a shared canvas.  
 Each participant’s drawings, cursor movements, and canvas actions (clear, undo, redo) are instantly synchronized across all connected clients.
@@ -9,19 +9,19 @@ Built entirely from scratch using **Vanilla JavaScript**, **HTML5 Canvas**, and 
 
 ---
 
-## 🚀 Core Functionalities
+##  Core Functionalities
 
-### 🖌️ Drawing Tools
+###  Drawing Tools
 - Pencil, Eraser, and Color Picker (black, red, blue, green)
 - Adjustable stroke width via slider
 - Clear canvas button
 
-### 🔄 Real-Time Synchronization
+###  Real-Time Synchronization
 - Drawings broadcast live to all users via WebSocket (Socket.IO)
 - Cursor tracking with unique color identifiers
 - Smooth and low-latency drawing updates
 
-### 👥 Collaboration Features
+###  Collaboration Features
 - Live user count
 - Room-based sessions (users join via a unique room code)
 - Undo/Redo synchronized across all users
@@ -29,7 +29,7 @@ Built entirely from scratch using **Vanilla JavaScript**, **HTML5 Canvas**, and 
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |--------|-------------|
@@ -40,7 +40,7 @@ Built entirely from scratch using **Vanilla JavaScript**, **HTML5 Canvas**, and 
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```bash
 collaborative-canvas/
@@ -61,33 +61,33 @@ collaborative-canvas/
 ```
 ---
 
-## 🧪 How to Test with Multiple Users
+##  How to Test with Multiple Users
 
-1️⃣ Run the backend server locally using:
+1️ Run the backend server locally using:
 ```bash
 npm start
 ```
 
 
-2️⃣ Open two or more tabs of client/index.html in Chrome or Firefox.  . <br>
-3️⃣ Draw in one tab — lines will appear instantly in all tabs.<br>
-4️⃣ Move cursors — see colored live cursor indicators.  <br>
-5️⃣ Try undo/redo, clear, and color change — all sync instantly across tabs.  <br>
-6️⃣ Optionally, test from two devices on the same Wi-Fi by connecting to your local IP.  <br>
+2️ Open two or more tabs of client/index.html in Chrome or Firefox.  . <br>
+3️ Draw in one tab — lines will appear instantly in all tabs.<br>
+4️ Move cursors — see colored live cursor indicators.  <br>
+5️ Try undo/redo, clear, and color change — all sync instantly across tabs.  <br>
+6️ Optionally, test from two devices on the same Wi-Fi by connecting to your local IP.  <br>
 
 ---
 
 ## ⚙️ Setup Instructions
 
-### 1️⃣ Clone Repository
+###  Clone Repository
 git clone https://github.com/your-username/collaborative-canvas.git
 cd collaborative-canvas
 
-### 2️⃣ Install Dependencies
+###  Install Dependencies
 npm install
 
 
-### 3️⃣ Start Server
+###  Start Server
 npm start
 
 ---
@@ -95,7 +95,7 @@ npm start
 
 
 
-## ⏱️ Time Spent on the Project
+## Time Spent on the Project
 
 | Task | Time Spent |
 |------|-------------|
@@ -108,7 +108,7 @@ npm start
 
 ---
 
-## 🧠 Evaluation Alignment
+## Evaluation Alignment
 
 | Evaluation Area | Implementation Highlights |
 |------------------|-----------------------------|
@@ -119,17 +119,17 @@ npm start
 
 ---
 
-## 🧩 Features Summary
+## Features Summary
 
-✅ Real-time drawing synchronization  
-✅ Cursor position sharing  
-✅ Global undo/redo  
-✅ Room-based collaboration  
-✅ Multi-tab synchronization  
-✅ Active user tracking  
+ Real-time drawing synchronization  
+ Cursor position sharing  
+ Global undo/redo  
+ Room-based collaboration  
+ Multi-tab synchronization  
+ Active user tracking  
 
 ---
-## 🚧 Planned Enhancements
+##  Planned Enhancements
 
 - Persistent canvas storage (MongoDB)  
 - Mobile touch support  
@@ -137,19 +137,19 @@ npm start
 
 
 ---
-## 🧑‍💻 Author
+## Author
 
 **Lalitha Somisetty**  
-🎓 *B.Tech — Computer Science (Artificial Intelligence and Engineering)*  
-🏫 *Amrita Vishwa Vidyapeetham*  
-💡 *Interests:* Real-Time Applications, AI/ML Systems, IoT, and Web Development  
+ *B.Tech — Computer Science (Artificial Intelligence and Engineering)*  
+ *Amrita Vishwa Vidyapeetham*  
+ *Interests:* Real-Time Applications, AI/ML Systems, IoT, and Web Development  
 
-📧 **Email:** slalithakumari15@gmail.com
-🌐 **GitHub:** [https://github.com/somesettylalithakumari](https://github.com/somesettylalithakumari)
+ **Email:** slalithakumari15@gmail.com
+ **GitHub:** [https://github.com/somesettylalithakumari](https://github.com/somesettylalithakumari)
 
 ---
 
-## 📝 License
+##  License
 
 **MIT License © 2025 Lalitha Somisetty**
 
